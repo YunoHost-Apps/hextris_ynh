@@ -3,12 +3,17 @@
 # Retrieve arguments
 domain=$1
 path=$2
+is_public=$3
 
 # Check domain/path availability
 sudo yunohost app checkurl $domain$path -a hextris
 if [[ ! $? -eq 0 ]]; then
     exit 1
 fi
+
+
+# Save app settings
+sudo yunohost app setting hextris is_public -v "$is_public"
 
 # Copy files to the right place
 final_path=/var/www/hextris
@@ -25,6 +30,11 @@ nginxconf=/etc/nginx/conf.d/$domain.d/hextris.conf
 sudo cp ../conf/nginx.conf $nginxconf
 sudo chown root: $nginxconf
 sudo chmod 600 $nginxconf
+
+if [ "$is_public" = "Yes" ];
+then
+    sudo yunohost app setting hextris skipped_uris -v "/"
+fi
 
 # Reload web server & sso
 sudo service nginx reload

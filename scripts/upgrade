@@ -3,6 +3,7 @@
 # Retrieve settings
 domain=$(sudo yunohost app setting hextris domain)
 path=$(sudo yunohost app setting hextris path)
+is_public=$(sudo yunohost app setting hextris is_public)
 
 # Remove trailing "/" for next commands
 path=${path%/}
@@ -22,6 +23,11 @@ nginxconf=/etc/nginx/conf.d/$domain.d/hextris.conf
 sudo cp ../conf/nginx.conf $nginxconf
 sudo chown root: $nginxconf
 sudo chmod 600 $nginxconf
+
+if [ "$is_public" = "Yes" ];
+then
+    sudo yunohost app setting hextris skipped_uris -v "/"
+fi
 
 # Reload web server & sso
 sudo service nginx reload
