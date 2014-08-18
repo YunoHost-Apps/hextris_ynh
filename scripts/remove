@@ -1,0 +1,6 @@
+#!/bin/bash
+
+domain=$(sudo yunohost app setting hextris domain)
+
+sudo rm -rf /var/www/hextris
+sudo rm -f /etc/nginx/conf.d/$domain.d/hextris.conf

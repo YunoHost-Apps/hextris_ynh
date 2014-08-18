@@ -1,0 +1,35 @@
+{
+    "name": "Hextris",
+    "id": "hextris",
+    "description": {
+        "en": "A fast paced puzzle game.",
+        "fr": "Un jeu de puzzle très rapide"
+    },
+    "developer": {
+        "name": "opi",
+        "email": "opi@no-log.org",
+        "url": "http://zeropi.net"
+    },
+    "multi_instance": "false",
+    "arguments": {
+        "install" : [
+            {
+                "name": "domain",
+                "ask": {
+                    "en": "Choose a domain for Hextris",
+                    "fr": "Choisissez un domaine pour Hextris"
+                },
+                "example": "domain.org"
+            },
+            {
+                "name": "path",
+                "ask": {
+                    "en": "Choose a path for Hextris",
+                    "fr": "Choisissez un chemin pour Hextris"
+                },
+                "example": "/hextris",
+                "default": "/hextris"
+            }
+        ]
+    }
+}
