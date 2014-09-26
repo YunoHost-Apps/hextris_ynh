@@ -5,6 +5,7 @@
         "en": "A fast paced puzzle game.",
         "fr": "Un jeu de puzzle très rapide"
     },
+    "licence": "GNU GPL-3",
     "developer": {
         "name": "opi",
         "email": "opi@no-log.org",
