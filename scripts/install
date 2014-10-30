@@ -33,7 +33,7 @@ sudo chmod 600 $nginxconf
 
 if [ "$is_public" = "Yes" ];
 then
-    sudo yunohost app setting hextris skipped_uris -v "/"
+    sudo yunohost app setting hextris unprotected_uris -v "/"
 fi
 
 # Reload web server & sso
