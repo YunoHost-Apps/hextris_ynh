@@ -5,17 +5,21 @@
         "en": "A fast paced puzzle game.",
         "fr": "Un jeu de puzzle très rapide"
     },
-    "licence": "GNU GPL-3",
-    "developer": {
+    "maintainer": {
         "name": "opi",
-        "email": "opi@no-log.org",
-        "url": "http://zeropi.net"
+        "email": "opi@zeropi.net",
     },
+    "version": "1.1",
+    "url": "http://hextris.github.io/",
+    "categories": [
+        "games"
+    ],
     "multi_instance": "false",
     "arguments": {
         "install" : [
             {
                 "name": "domain",
+                "type": "domain",
                 "ask": {
                     "en": "Choose a domain for Hextris",
                     "fr": "Choisissez un domaine pour Hextris"
@@ -24,6 +28,7 @@
             },
             {
                 "name": "path",
+                "type": "path",
                 "ask": {
                     "en": "Choose a path for Hextris",
                     "fr": "Choisissez un chemin pour Hextris"
