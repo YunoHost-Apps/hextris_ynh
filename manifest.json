@@ -1,6 +1,7 @@
 {
     "name": "Hextris",
     "id": "hextris",
+    "packaging_format": 1,
     "description": {
         "en": "A fast paced puzzle game.",
         "fr": "Un jeu de puzzle très rapide"
