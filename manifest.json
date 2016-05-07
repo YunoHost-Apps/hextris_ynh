@@ -2,6 +2,9 @@
     "name": "Hextris",
     "id": "hextris",
     "packaging_format": 1,
+    "requirements": {
+        "yunohost": ">> 2.3.15"
+    },
     "description": {
         "en": "A fast paced puzzle game.",
         "fr": "Un jeu de puzzle très rapide"
