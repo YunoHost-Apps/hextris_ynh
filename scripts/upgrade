@@ -32,6 +32,12 @@ elif [ "$is_public" = "No" ]; then
 	is_public=0
 fi
 
+# If final_path doesn't exist, create it
+if [ -z $final_path ]; then
+	final_path=/var/www/$app
+	ynh_app_setting_set $app final_path $final_path
+fi
+
 #=================================================
 # BACKUP BEFORE UPGRADE THEN ACTIVE TRAP
 #=================================================
@@ -55,7 +61,6 @@ path_url=$(ynh_normalize_url_path $path_url)
 # COPY SOURCES
 #=================================================
 
-ynh_app_setting_set $app final_path $final_path
 # Copy files to the right place
 cp -a ../sources/. $final_path
 
