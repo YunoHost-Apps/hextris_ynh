@@ -2,23 +2,21 @@
     "name": "Hextris",
     "id": "hextris",
     "packaging_format": 1,
-    "requirements": {
-        "yunohost": ">> 2.3.15"
-    },
     "description": {
         "en": "A fast paced puzzle game.",
         "fr": "Un jeu de puzzle très rapide"
     },
+    "version": "1.1",
+    "url": "http://hextris.github.io/",
+    "license": "GPL-3.0",
     "maintainer": {
         "name": "opi",
         "email": "opi@zeropi.net"
     },
-    "version": "1.1",
-    "url": "http://hextris.github.io/",
-    "categories": [
-        "games"
-    ],
-    "multi_instance": "false",
+    "requirements": {
+        "yunohost": ">= 2.7.2"
+    },
+    "multi_instance": true,
     "services": [
         "nginx"
     ],
@@ -45,12 +43,12 @@
             },
             {
                 "name": "is_public",
+                "type": "boolean",
                 "ask": {
-                    "en": "Is it a public site ?",
-                    "fr": "Est-ce un site public ?"
+                    "en": "Is it a public application?",
+                    "fr": "Est-ce une application publique ?"
                 },
-                "choices": ["Yes", "No"],
-                "default": "Yes"
+                "default": true
             }
         ]
     }
