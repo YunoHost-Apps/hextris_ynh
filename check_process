@@ -11,6 +11,7 @@
 		setup_private=1
 		setup_public=1
 		upgrade=1
+		upgrade=1	from_commit=6f4c1e5f81bea341c07e199c4916fc31b54eaf61
 		backup_restore=1
 		multi_instance=1
 		incorrect_path=1
@@ -31,3 +32,7 @@
 ;;; Options
 Email=
 Notification=none
+;;; Upgrade options
+	; commit=6f4c1e5f81bea341c07e199c4916fc31b54eaf61
+		name=Global refactoring
+		manifest_arg=domain=DOMAIN&path=PATH&is_public=1&
