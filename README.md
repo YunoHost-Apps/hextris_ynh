@@ -29,9 +29,9 @@ An addictive puzzle game inspired by Tetris.
 
 #### Supported architectures
 
-* x86-64b - [![Build Status](https://ci-apps.yunohost.org/ci/logs/hextris%20%28Official%29.svg)](https://ci-apps.yunohost.org/ci/apps/hextris/)
-* ARMv8-A - [![Build Status](https://ci-apps-arm.yunohost.org/ci/logs/hextris%20%28Official%29.svg)](https://ci-apps-arm.yunohost.org/ci/apps/hextris/)
-* Jessie x86-64b - [![Build Status](https://ci-stretch.nohost.me/ci/logs/hextris%20%28Official%29.svg)](https://ci-stretch.nohost.me/ci/apps/hextris/)
+* x86-64b - [![Build Status](https://ci-apps.yunohost.org/ci/logs/hextris%20%28Apps%29.svg)](https://ci-apps.yunohost.org/ci/apps/hextris/)
+* ARMv8-A - [![Build Status](https://ci-apps-arm.yunohost.org/ci/logs/hextris%20%28Apps%29.svg)](https://ci-apps-arm.yunohost.org/ci/apps/hextris/)
+* Jessie x86-64b - [![Build Status](https://ci-stretch.nohost.me/ci/logs/hextris%20%28Apps%29.svg)](https://ci-stretch.nohost.me/ci/apps/hextris/)
 
 ## Limitations
 
@@ -41,6 +41,7 @@ An addictive puzzle game inspired by Tetris.
 
  * Report a bug: https://github.com/YunoHost-Apps/hextris_ynh/issues
  * Hextris website: http://hextris.github.io/
+ * Upstream app repository: https://github.com/Hextris/Hextris
  * YunoHost website: https://yunohost.org/
 
 ---
