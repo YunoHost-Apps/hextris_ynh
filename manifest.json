@@ -10,8 +10,8 @@
     "url": "http://hextris.github.io/",
     "license": "GPL-3.0",
     "maintainer": {
-        "name": "opi",
-        "email": "opi@zeropi.net"
+        "name": "AerisOne",
+        "email": "aeris@e.email"
     },
     "requirements": {
         "yunohost": ">= 3.5.0"
