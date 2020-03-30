@@ -135,7 +135,7 @@ ynh_systemd_action --service_name=nginx --action=reload
 
 if [ -n "$show_warning" ]; then
 	if [ $show_warning -eq 1 ]; then
-                ynh_print_warn --message="Due to the fact that Yunohost resets permissions when upgrading a package from the old permissions system to the new one, we had to define your instance of Hextris as public. If you want to make it private, you can do it via webmin."
+                ynh_print_warn --message="In order to make this package compatible with Yunohost's new permission management system, we had to revert back any change to package's permissions made since the 3.7.0 release. If you edited permissions of this package between Yunohost 3.7.0 upgrade and this upgrade these changes have been discarded and will need to be made again. If you do not have made any modifications to permissions of this package since Yunohost 3.7.0 release, forget about that. We are sorry for that, this will only happen once."
 	fi
 fi
 
