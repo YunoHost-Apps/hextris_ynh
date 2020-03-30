@@ -48,11 +48,6 @@ skipped_uris=$(ynh_app_setting_get --app=$app --key=skipped_uris)
 unprotected_uris=$(ynh_app_setting_get --app=$app --key=unprotected_uris)
 protected_uris=$(ynh_app_setting_get --app=$app --key=protected_uris)
 
-# Remove is_public if exists
-if [ ! -z "$is_public" ]; then
-	ynh_app_setting_delete --app=$app --key=is_public
-fi
-
 # Remove skipped_uris if exists
 if [ ! -z "$skipped_uris" ]; then
 	ynh_app_setting_delete --app=$app --key=skipped_uris
@@ -67,6 +62,16 @@ fi
 if [ ! -z "$protected_uris" ]; then
 	ynh_app_setting_delete --app=$app --key=protected_uris
 fi
+
+# Remove is_public if exists
+if [ ! -z $is_public ]; then
+	if [ "$is_public" = "1" ]; then
+		ynh_permission_update --permission "main" --add "visitors"
+                show_warning="1"
+	fi
+	ynh_app_setting_delete --app=$app --key=is_public
+fi
+
 
 #=================================================
 # BACKUP BEFORE UPGRADE THEN ACTIVE TRAP
@@ -130,5 +135,11 @@ ynh_systemd_action --service_name=nginx --action=reload
 #=================================================
 # END OF SCRIPT
 #=================================================
+
+if [ ! -z $show_warning ]; then
+	if [ "$show_warning" = "1" ]; then
+                ynh_print_warn --message="Due to the fact that Yunohost resets permissions when upgrading a package from the old permissions system to the new one, we had to define your instance of Hextris as public. If you want to make it private, you can do it via webmin."
+	fi
+fi
 
 ynh_script_progression --message="Upgrade of $app completed" --last
