@@ -42,14 +42,13 @@ if [ -z "$final_path" ]; then
 	ynh_app_setting_set --app=$app --key=final_path --value=$final_path
 fi
 
-# Cleaning legacy permissions
-is_public=$(ynh_app_setting_get --app=$app --key=is_public)
-skipped_uris=$(ynh_app_setting_get --app=$app --key=skipped_uris)
-unprotected_uris=$(ynh_app_setting_get --app=$app --key=unprotected_uris)
-protected_uris=$(ynh_app_setting_get --app=$app --key=protected_uris)
+
+###
+### MIGRATE FROM LEGACY PERMISSION SYSTEM
+###
 
 # Remove skipped_uris if exists
-# /!\ This commands also remove the "main" permission from "visitor" groups, that's why I made the trick with is_public and the warn at the end.
+# /!\ This commands also remove the "main" permission from "visitor" groups.
 ynh_app_setting_delete --app=$app --key=skipped_uris
 
 # Remove unprotected_uris if exists
@@ -62,12 +61,10 @@ ynh_app_setting_delete --app=$app --key=protected_uris
 if [ -n "$is_public" ]; then
 	if [ $is_public -eq 1 ]; then
 		ynh_permission_update --permission "main" --add "visitors"
-                show_warning="1"
-        else
-                show_warning="0"
-	fi
+        fi
 	ynh_app_setting_delete --app=$app --key=is_public
 fi
+
 
 
 #=================================================
@@ -132,11 +129,5 @@ ynh_systemd_action --service_name=nginx --action=reload
 #=================================================
 # END OF SCRIPT
 #=================================================
-
-if [ -n "$show_warning" ]; then
-	if [ $show_warning -eq 1 ]; then
-                ynh_print_warn --message="In order to make this package compatible with Yunohost's new permission management system, we had to revert back any change to package's permissions made since the 3.7.0 release. If you edited permissions of this package between Yunohost 3.7.0 upgrade and this upgrade these changes have been discarded and will need to be made again. If you do not have made any modifications to permissions of this package since Yunohost 3.7.0 release, forget about that. We are sorry for that, this will only happen once."
-	fi
-fi
 
 ynh_script_progression --message="Upgrade of $app completed" --last
