@@ -49,23 +49,18 @@ unprotected_uris=$(ynh_app_setting_get --app=$app --key=unprotected_uris)
 protected_uris=$(ynh_app_setting_get --app=$app --key=protected_uris)
 
 # Remove skipped_uris if exists
-if [ ! -z "$skipped_uris" ]; then
-	ynh_app_setting_delete --app=$app --key=skipped_uris
-fi
+# /!\ This commands also remove the "main" permission from "visitor" groups, that's why I made the trick with is_public and the warn at the end.
+ynh_app_setting_delete --app=$app --key=skipped_uris
 
 # Remove unprotected_uris if exists
-if [ ! -z "$unprotected_uris" ]; then
-	ynh_app_setting_delete --app=$app --key=unprotected_uris
-fi
+ynh_app_setting_delete --app=$app --key=unprotected_uris
 
 # Remove protected_uris if exists
-if [ ! -z "$protected_uris" ]; then
-	ynh_app_setting_delete --app=$app --key=protected_uris
-fi
+ynh_app_setting_delete --app=$app --key=protected_uris
 
-# Remove is_public if exists
-if [ ! -z $is_public ]; then
-	if [ "$is_public" = "1" ]; then
+# Remove is_public if exists and trick about what I said 8 lines before.
+if [ -n "$is_public" ]; then
+	if [ $is_public -eq 1 ]; then
 		ynh_permission_update --permission "main" --add "visitors"
                 show_warning="1"
         else
@@ -138,8 +133,8 @@ ynh_systemd_action --service_name=nginx --action=reload
 # END OF SCRIPT
 #=================================================
 
-if [ ! -z $show_warning ]; then
-	if [ "$show_warning" = "1" ]; then
+if [ -n "$show_warning" ]; then
+	if [ $show_warning -eq 1 ]; then
                 ynh_print_warn --message="Due to the fact that Yunohost resets permissions when upgrading a package from the old permissions system to the new one, we had to define your instance of Hextris as public. If you want to make it private, you can do it via webmin."
 	fi
 fi
