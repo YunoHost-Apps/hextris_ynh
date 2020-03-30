@@ -23,12 +23,6 @@ final_path=$(ynh_app_setting_get --app=$app --key=final_path)
 # CHECK VERSION
 #=================================================
 
-### This helper will compare the version of the currently installed app and the version of the upstream package.
-### $upgrade_type can have 2 different values
-### - UPGRADE_APP if the upstream app version has changed
-### - UPGRADE_PACKAGE if only the YunoHost package has changed
-### ynh_check_app_version_changed will stop the upgrade if the app is up to date.
-### UPGRADE_APP should be used to upgrade the core app only if there's an upgrade to do.
 upgrade_type=$(ynh_check_app_version_changed)
 
 #=================================================
@@ -47,24 +41,13 @@ fi
 ### MIGRATE FROM LEGACY PERMISSION SYSTEM
 ###
 
-# Remove skipped_uris if exists
-# /!\ This commands also remove the "main" permission from "visitor" groups.
-ynh_app_setting_delete --app=$app --key=skipped_uris
-
-# Remove unprotected_uris if exists
-ynh_app_setting_delete --app=$app --key=unprotected_uris
-
-# Remove protected_uris if exists
-ynh_app_setting_delete --app=$app --key=protected_uris
-
-# Remove is_public if exists and trick about what I said 8 lines before.
 if [ -n "$is_public" ]; then
+        ynh_app_setting_delete --app=$app --key=skipped_uris
 	if [ $is_public -eq 1 ]; then
 		ynh_permission_update --permission "main" --add "visitors"
         fi
 	ynh_app_setting_delete --app=$app --key=is_public
 fi
-
 
 
 #=================================================
