@@ -30,6 +30,14 @@ upgrade_type=$(ynh_check_app_version_changed)
 #=================================================
 ynh_script_progression --message="Ensuring downward compatibility..."
 
+# REMOVE SKIPPED_URIS
+skipped_uris=$(ynh_app_setting_get --app=$app --key=skipped_uris)
+
+# Unused with the permission system
+if [ ! -z "$skipped_uris" ]; then
+    ynh_app_setting_delete --app=$app --key=skipped_uris
+fi
+
 # If final_path doesn't exist, create it
 if [ -z "$final_path" ]; then
 	final_path=/var/www/$app
