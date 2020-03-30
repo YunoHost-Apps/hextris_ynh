@@ -41,6 +41,8 @@ fi
 ### MIGRATE FROM LEGACY PERMISSION SYSTEM
 ###
 
+is_public=$(ynh_app_setting_get --app=$app --key=is_public)
+
 if [ -n "$is_public" ]; then
         ynh_app_setting_delete --app=$app --key=skipped_uris
 	if [ $is_public -eq 1 ]; then
