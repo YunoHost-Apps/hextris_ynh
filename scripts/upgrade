@@ -36,10 +36,7 @@ if [ -z "$final_path" ]; then
 	ynh_app_setting_set --app=$app --key=final_path --value=$final_path
 fi
 
-
-###
-### MIGRATE FROM LEGACY PERMISSION SYSTEM
-###
+# Migrate from legacy permission system
 
 is_public=$(ynh_app_setting_get --app=$app --key=is_public)
 
