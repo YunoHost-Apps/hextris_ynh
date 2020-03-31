@@ -6,6 +6,7 @@
 # IMPORT GENERIC HELPERS
 #=================================================
 
+source _common.sh
 source /usr/share/yunohost/helpers
 
 #=================================================
@@ -37,14 +38,18 @@ if [ -z "$final_path" ]; then
 fi
 
 # Migrate from legacy permission system
-
 is_public=$(ynh_app_setting_get --app=$app --key=is_public)
 
 if [ -n "$is_public" ]; then
-        ynh_app_setting_delete --app=$app --key=skipped_uris
-	if [ $is_public -eq 1 ]; then
+	# Removing skipped/unprotected_uris under certain conditions, remove the visitors group added during the migration process of 3.7
+	# Remove skipped_uris. If the app was public, add visitors again to the main permission
+	if ynh_permission_has_user --permission=main --user=visitors
+	then
+		ynh_app_setting_delete --app=$app --key=skipped_uris
 		ynh_permission_update --permission "main" --add "visitors"
-        fi
+	else
+		ynh_app_setting_delete --app=$app --key=skipped_uris
+	fi
 	ynh_app_setting_delete --app=$app --key=is_public
 fi
 
