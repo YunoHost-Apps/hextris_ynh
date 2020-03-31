@@ -49,8 +49,9 @@
                     "fr": "Est-ce une application publique ?"
                 },
                 "help": {
-                    "en": "If enabled, Hextris will be accessible by people who doesn't have an account. This can be changed later via the webmin."
+                    "en": "If enabled, Hextris will be accessible by people who doesn't have an account. This can be changed later via the webmin.",
                     "fr": "Si cette case est cochée, Hextris sera accessible aux personnes n'ayant pas de compte. Vous pourrez changer ceci plus tard via le webmin."
+                },
                 "default": true
             }
         ]
