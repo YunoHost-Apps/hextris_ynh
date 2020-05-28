@@ -6,6 +6,7 @@
 # IMPORT GENERIC HELPERS
 #=================================================
 
+source _common.sh
 source /usr/share/yunohost/helpers
 
 #=================================================
@@ -40,4 +41,4 @@ ynh_remove_nginx_config
 # END OF SCRIPT
 #=================================================
 
-ynh_print_info "Removal of $app completed"
+ynh_script_progression --message="Removal of $app completed" --last
