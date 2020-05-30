@@ -34,10 +34,10 @@ An addictive puzzle game inspired by Tetris.
 
 ---
 
-Developers info
+Developer info
 ----------------
 
-Please do your pull request to the [testing branch](https://github.com/YunoHost-Apps/hextris_ynh/tree/testing).
+Please send your pull request to the [testing branch](https://github.com/YunoHost-Apps/hextris_ynh/tree/testing).
 
 To try the testing branch, please proceed like that.
 ```
