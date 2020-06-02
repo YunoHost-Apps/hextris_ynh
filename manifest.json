@@ -14,7 +14,7 @@
         "email": "aeris@e.email"
     },
     "requirements": {
-        "yunohost": ">= 3.7.0"
+        "yunohost": ">= 3.7.1"
     },
     "multi_instance": true,
     "services": [
