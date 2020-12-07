@@ -34,8 +34,7 @@ An addictive puzzle game inspired by Tetris.
 
 ---
 
-Developer info
-----------------
+## Developer info
 
 Please send your pull request to the [testing branch](https://github.com/YunoHost-Apps/hextris_ynh/tree/testing).
 
