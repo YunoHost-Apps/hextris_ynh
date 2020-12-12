@@ -6,7 +6,7 @@
         "en": "A fast paced puzzle game.",
         "fr": "Un jeu de puzzle très rapide"
     },
-    "version": "2020-05-05~ynh1",
+    "version": "2020-05-05~ynh2",
     "url": "http://hextris.github.io/",
     "license": "GPL-3.0",
     "maintainer": {
@@ -14,7 +14,7 @@
         "email": "aeris@e.email"
     },
     "requirements": {
-        "yunohost": ">= 3.7.1"
+        "yunohost": ">= 3.8.1"
     },
     "multi_instance": true,
     "services": [

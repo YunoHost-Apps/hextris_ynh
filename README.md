@@ -1,7 +1,9 @@
-# Hextris app for YunoHost
+# Hextris for YunoHost
 
 [![Integration level](https://dash.yunohost.org/integration/hextris.svg)](https://dash.yunohost.org/appci/app/hextris) ![](https://ci-apps.yunohost.org/ci/badges/hextris.status.svg) ![](https://ci-apps.yunohost.org/ci/badges/hextris.maintain.svg)  
 [![Install Hextris with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=hextris)
+
+*[Lire ce readme en français.](./README_fr.md)*
 
 > *This package allows you to install Hextris quickly and simply on a YunoHost server.  
 If you don't have YunoHost, please consult [the guide](https://yunohost.org/#/install) to learn how to install it.*
@@ -34,8 +36,7 @@ An addictive puzzle game inspired by Tetris.
 
 ---
 
-Developer info
-----------------
+## Developer info
 
 Please send your pull request to the [testing branch](https://github.com/YunoHost-Apps/hextris_ynh/tree/testing).
 
