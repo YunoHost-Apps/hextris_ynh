@@ -1,7 +1,7 @@
 # Hextris for YunoHost
 
 [![Integration level](https://dash.yunohost.org/integration/hextris.svg)](https://dash.yunohost.org/appci/app/hextris) ![](https://ci-apps.yunohost.org/ci/badges/hextris.status.svg) ![](https://ci-apps.yunohost.org/ci/badges/hextris.maintain.svg)  
-[![Install Hextris with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=hextris)
+[![Install Hextris with YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=hextris)
 
 *[Lire ce readme en français.](./README_fr.md)*
 
