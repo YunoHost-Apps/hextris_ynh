@@ -25,7 +25,7 @@ An addictive puzzle game inspired by Tetris.
 ## Documentation
 
  * Official documentation: https://github.com/Hextris/Hextris
- * YunoHost documentation: https://yunohost.org/#/app_hextris
+ * YunoHost documentation: https://yunohost.org/en/app_hextris
 
 
 #### Supported architectures
