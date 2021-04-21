@@ -30,8 +30,8 @@ An addictive puzzle game inspired by Tetris.
 
 #### Supported architectures
 
-* x86-64 - [![Build Status](https://ci-apps.yunohost.org/ci/logs/hextris%20%28Apps%29.svg)](https://ci-apps.yunohost.org/ci/apps/hextris/)
-* ARMv8-A - [![Build Status](https://ci-apps-arm.yunohost.org/ci/logs/hextris%20%28Apps%29.svg)](https://ci-apps-arm.yunohost.org/ci/apps/hextris/)
+* x86-64 - [![Build Status](https://ci-apps.yunohost.org/ci/logs/hextris.svg)](https://ci-apps.yunohost.org/ci/apps/hextris/)
+* ARMv8-A - [![Build Status](https://ci-apps-arm.yunohost.org/ci/logs/hextris.svg)](https://ci-apps-arm.yunohost.org/ci/apps/hextris/)
 
 ## Links
 
