@@ -3,18 +3,24 @@
     "id": "hextris",
     "packaging_format": 1,
     "description": {
-        "en": "A fast paced puzzle game.",
+        "en": "A fast paced puzzle game",
         "fr": "Un jeu de puzzle très rapide"
     },
-    "version": "2020-05-05~ynh3",
+    "version": "2020-05-05~ynh4",
     "url": "http://hextris.github.io/",
+    "upstream": {
+        "license": "GPL-3.0",
+        "website": "http://hextris.github.io/",
+        "demo": "https://hextris.io/",
+        "code": "https://github.com/Hextris/Hextris"
+    },
     "license": "GPL-3.0",
     "maintainer": {
         "name": "AerisOne",
         "email": "aeris@e.email"
     },
     "requirements": {
-        "yunohost": ">= 4.1.7"
+        "yunohost": ">= 4.2.4"
     },
     "multi_instance": true,
     "services": [
