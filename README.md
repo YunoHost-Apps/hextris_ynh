@@ -21,7 +21,6 @@ HEXTRIS is a fast paced puzzle game inspired by Tetris. Blocks start on the edge
 
 **Shipped version:** 2020.05.05~ynh4
 
-
 **Demo:** https://hextris.io/
 
 ## Screenshots
