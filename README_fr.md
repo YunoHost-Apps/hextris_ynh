@@ -15,11 +15,16 @@ Si vous n'avez pas YunoHost, regardez [ici](https://yunohost.org/#/install) pour
 
 ## Vue d'ensemble
 
-Rotate the Hexagon to prevent the blocks from stacking outside the outer grey hexagon!
+HEXTRIS est un jeu de puzzle au rythme rapide inspiré de Tetris.
+Les blocs commencent sur les bords de l'écran, et tombent vers l'hexagone bleu intérieur.
+Le but du jeu est d'empêcher les blocs de s'empiler en dehors de la zone de l'hexagone gris.
+Pour ce faire, vous devez faire tourner l'hexagone pour gérer différentes piles de blocs sur chaque face.
+Visez à relier 3 blocs ou plus de la même couleur : lorsque 3 blocs ou plus de la même couleur se touchent, ils sont détruits, et les blocs au-dessus d'eux glissent vers le bas !
+Détruire plusieurs séries de blocs permet d'obtenir des combos, dont la durée est indiquée par un contour qui s'estompe rapidement autour de l'hexagone extérieur gris.
+Vous perdez une fois les blocs sur une face de la pile hexagonale en dehors de l'hexagone extérieur !
 
-HEXTRIS is a fast paced puzzle game inspired by Tetris. Blocks start on the edges of the screen, and fall towards the inner blue hexagon. The objective of the game is to prevent the blocks from stacking outside the area of the grey hexagon. To do this, you must rotate the hexagon to manage different stacks of blocks on each face. Aim to connect 3 or more blocks of the same color: when 3 or more blocks of the same color touch each other, they are destroyed, and the blocks above them slide down! Destroying multiple series of blocks grants combos, whose durations are indicated by a quickly receding outline around the outer, grey hexagon. You lose once blocks on a face of the hexagon stack outside of the outer hexagon!
 
-**Version incluse :** 2020.05.05~ynh4
+**Version incluse :** 2020.05.05~ynh5
 
 **Démo :** https://hextris.io/
 

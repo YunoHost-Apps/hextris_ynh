@@ -11,6 +11,7 @@
 		setup_private=1
 		setup_public=1
 		upgrade=1
+		# 2020.05.05~ynh4
 		upgrade=1	from_commit=bfdb624f86329cb5095cb3a343fc54e84d001c70
 		backup_restore=1
 		multi_instance=1
