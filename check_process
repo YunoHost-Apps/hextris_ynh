@@ -11,8 +11,8 @@
 		setup_private=1
 		setup_public=1
 		upgrade=1
-		upgrade=1	from_commit=6f4c1e5f81bea341c07e199c4916fc31b54eaf61
-		upgrade=1	from_commit=ec4da0af3abbd7b8bd59d5f7d9d7c594ae844ac0
+		# 2020.05.05~ynh4
+		upgrade=1	from_commit=bfdb624f86329cb5095cb3a343fc54e84d001c70
 		backup_restore=1
 		multi_instance=1
 		port_already_use=0
@@ -21,8 +21,5 @@
 Email=
 Notification=none
 ;;; Upgrade options
-	; commit=6f4c1e5f81bea341c07e199c4916fc31b54eaf61
-		name=Global refactoring
-		manifest_arg=domain=DOMAIN&path=PATH&is_public=1&
-	; commit=ec4da0af3abbd7b8bd59d5f7d9d7c594ae844ac0
+	; commit=bfdb624f86329cb5095cb3a343fc54e84d001c70
 		name=1.1-ynh3
