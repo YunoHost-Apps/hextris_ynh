@@ -5,15 +5,16 @@ It shall NOT be edited by hand.
 
 # Hextris pour YunoHost
 
-[![Niveau d'intégration](https://dash.yunohost.org/integration/hextris.svg)](https://dash.yunohost.org/appci/app/hextris) ![Statut du fonctionnement](https://ci-apps.yunohost.org/ci/badges/hextris.status.svg) ![Statut de maintenance](https://ci-apps.yunohost.org/ci/badges/hextris.maintain.svg)  
+[![Niveau d’intégration](https://dash.yunohost.org/integration/hextris.svg)](https://dash.yunohost.org/appci/app/hextris) ![Statut du fonctionnement](https://ci-apps.yunohost.org/ci/badges/hextris.status.svg) ![Statut de maintenance](https://ci-apps.yunohost.org/ci/badges/hextris.maintain.svg)
+
 [![Installer Hextris avec YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=hextris)
 
 *[Read this readme in english.](./README.md)*
 
-> *Ce package vous permet d'installer Hextris rapidement et simplement sur un serveur YunoHost.
-Si vous n'avez pas YunoHost, regardez [ici](https://yunohost.org/#/install) pour savoir comment l'installer et en profiter.*
+> *Ce package vous permet d’installer Hextris rapidement et simplement sur un serveur YunoHost.
+Si vous n’avez pas YunoHost, regardez [ici](https://yunohost.org/#/install) pour savoir comment l’installer et en profiter.*
 
-## Vue d'ensemble
+## Vue d’ensemble
 
 HEXTRIS est un jeu de puzzle au rythme rapide inspiré de Tetris.
 Les blocs commencent sur les bords de l'écran, et tombent vers l'hexagone bleu intérieur.
@@ -24,18 +25,18 @@ Détruire plusieurs séries de blocs permet d'obtenir des combos, dont la durée
 Vous perdez une fois les blocs sur une face de la pile hexagonale en dehors de l'hexagone extérieur !
 
 
-**Version incluse :** 2020.05.05~ynh5
+**Version incluse :** 2023.06.08~ynh1
 
 **Démo :** https://hextris.io/
 
-## Captures d'écran
+## Captures d’écran
 
-![Capture d'écran de Hextris](./doc/screenshots/screenshot.jpg)
+![Capture d’écran de Hextris](./doc/screenshots/screenshot.jpg)
 
 ## Documentations et ressources
 
-* Site officiel de l'app : <http://hextris.github.io/>
-* Dépôt de code officiel de l'app : <https://github.com/Hextris/Hextris>
+* Site officiel de l’app : <http://hextris.github.io/>
+* Dépôt de code officiel de l’app : <https://github.com/Hextris/Hextris>
 * Documentation YunoHost pour cette app : <https://yunohost.org/app_hextris>
 * Signaler un bug : <https://github.com/YunoHost-Apps/hextris_ynh/issues>
 
@@ -51,4 +52,4 @@ ou
 sudo yunohost app upgrade hextris -u https://github.com/YunoHost-Apps/hextris_ynh/tree/testing --debug
 ```
 
-**Plus d'infos sur le packaging d'applications :** <https://yunohost.org/packaging_apps>
+**Plus d’infos sur le packaging d’applications :** <https://yunohost.org/packaging_apps>
