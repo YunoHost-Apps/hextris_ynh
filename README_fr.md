@@ -25,7 +25,7 @@ Détruire plusieurs séries de blocs permet d'obtenir des combos, dont la durée
 Vous perdez une fois les blocs sur une face de la pile hexagonale en dehors de l'hexagone extérieur !
 
 
-**Version incluse :** 2020.05.05~ynh5
+**Version incluse :** 2023.06.08~ynh1
 
 **Démo :** https://hextris.io/
 

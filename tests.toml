@@ -1,0 +1,9 @@
+test_format = 1.0
+
+[default]
+
+    # -------------------------------
+    # Commits to test upgrade from
+    # -------------------------------
+
+    test_upgrade_from.bfdb624f86329cb5095cb3a343fc54e84d001c70.name = "Upgrade from 2020.05.05~ynh4"

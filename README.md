@@ -25,7 +25,7 @@ Destroying multiple series of blocks grants combos, whose durations are indicate
 You lose once blocks on a face of the hexagon stack outside of the outer hexagon!
 
 
-**Shipped version:** 2020.05.05~ynh5
+**Shipped version:** 2023.06.08~ynh1
 
 **Demo:** https://hextris.io/
 
