@@ -16,7 +16,7 @@ demo = "https://hextris.io/"
 code = "https://github.com/Hextris/Hextris"
 
 [integration]
-yunohost = ">= 11.1.19"
+yunohost = ">= 11.1.20"
 architectures = "all"
 multi_instance = true
 ldap = false
