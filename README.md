@@ -5,7 +5,8 @@ It shall NOT be edited by hand.
 
 # Hextris for YunoHost
 
-[![Integration level](https://dash.yunohost.org/integration/hextris.svg)](https://dash.yunohost.org/appci/app/hextris) ![Working status](https://ci-apps.yunohost.org/ci/badges/hextris.status.svg) ![Maintenance status](https://ci-apps.yunohost.org/ci/badges/hextris.maintain.svg)  
+[![Integration level](https://dash.yunohost.org/integration/hextris.svg)](https://dash.yunohost.org/appci/app/hextris) ![Working status](https://ci-apps.yunohost.org/ci/badges/hextris.status.svg) ![Maintenance status](https://ci-apps.yunohost.org/ci/badges/hextris.maintain.svg)
+
 [![Install Hextris with YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=hextris)
 
 *[Lire ce readme en français.](./README_fr.md)*
@@ -24,7 +25,7 @@ Destroying multiple series of blocks grants combos, whose durations are indicate
 You lose once blocks on a face of the hexagon stack outside of the outer hexagon!
 
 
-**Shipped version:** 2020.05.05~ynh5
+**Shipped version:** 2023.06.08~ynh1
 
 **Demo:** https://hextris.io/
 
