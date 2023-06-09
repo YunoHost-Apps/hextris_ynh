@@ -5,7 +5,7 @@ name = "Hextris"
 description.en = "Fast paced puzzle game"
 description.fr = "Jeu de puzzle très rapide"
 
-version = "2023.06.08~ynh1"
+version = "2023.06.09~ynh1"
 
 maintainers = ["AerisOne"]
 
@@ -39,8 +39,8 @@ ram.runtime = "50M"
 
 [resources]
         [resources.sources.main]
-        url = "https://github.com/Hextris/hextris/archive/8872ec47d694628e2fe668ebaa90b13d5626d95f.tar.gz"
-        sha256 = "67f3fbd54c405717a25fb1e6f71d2b46e94c7ac6971861dd99ae5e58f6609892"
+        url = "https://github.com/Hextris/hextris/archive/3f4847dc8fd7dab3d1c87e6324b9159d92fbd396.tar.gz"
+        sha256 = "38539c391cd97b1d90177c81b55a6194fd00e1b930bb21951d39b4902a4377ef"
         autoupdate.upstream = "https://github.com/Hextris/hextris"
         autoupdate.strategy = "latest_github_commit"
 
