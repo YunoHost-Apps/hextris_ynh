@@ -37,7 +37,7 @@ You lose once blocks on a face of the hexagon stack outside of the outer hexagon
 
 * Official app website: <http://hextris.github.io/>
 * Upstream app code repository: <https://github.com/Hextris/Hextris>
-* YunoHost documentation for this app: <https://yunohost.org/app_hextris>
+* YunoHost Store: <https://apps.yunohost.org/app/hextris>
 * Report a bug: <https://github.com/YunoHost-Apps/hextris_ynh/issues>
 
 ## Developer info
