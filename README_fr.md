@@ -37,7 +37,7 @@ Vous perdez une fois les blocs sur une face de la pile hexagonale en dehors de l
 
 * Site officiel de l’app : <http://hextris.github.io/>
 * Dépôt de code officiel de l’app : <https://github.com/Hextris/Hextris>
-* Documentation YunoHost pour cette app : <https://yunohost.org/app_hextris>
+* YunoHost Store: <https://apps.yunohost.org/app/hextris>
 * Signaler un bug : <https://github.com/YunoHost-Apps/hextris_ynh/issues>
 
 ## Informations pour les développeurs
