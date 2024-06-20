@@ -9,7 +9,7 @@ It shall NOT be edited by hand.
 
 [![Install Hextris with YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=hextris)
 
-*[Read this README is other languages.](./ALL_README.md)*
+*[Read this README in other languages.](./ALL_README.md)*
 
 > *This package allows you to install Hextris quickly and simply on a YunoHost server.*  
 > *If you don't have YunoHost, please consult [the guide](https://yunohost.org/install) to learn how to install it.*
@@ -35,17 +35,10 @@ You lose once blocks on a face of the hexagon stack outside of the outer hexagon
 
 ## Documentation and resources
 
-<<<<<<< HEAD
-* Official app website: <http://hextris.github.io/>
-* Upstream app code repository: <https://github.com/Hextris/Hextris>
-* YunoHost Store: <https://apps.yunohost.org/app/hextris>
-* Report a bug: <https://github.com/YunoHost-Apps/hextris_ynh/issues>
-=======
 - Official app website: <http://hextris.github.io/>
 - Upstream app code repository: <https://github.com/Hextris/Hextris>
 - YunoHost Store: <https://apps.yunohost.org/app/hextris>
 - Report a bug: <https://github.com/YunoHost-Apps/hextris_ynh/issues>
->>>>>>> master
 
 ## Developer info
 

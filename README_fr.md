@@ -25,11 +25,7 @@ Détruire plusieurs séries de blocs permet d'obtenir des combos, dont la durée
 Vous perdez une fois les blocs sur une face de la pile hexagonale en dehors de l'hexagone extérieur !
 
 
-<<<<<<< HEAD
-**Version incluse :** 2023.06.09~ynh1
-=======
 **Version incluse :** 2023.06.09~ynh1
->>>>>>> master
 
 **Démo :** <https://hextris.io/>
 
@@ -39,17 +35,10 @@ Vous perdez une fois les blocs sur une face de la pile hexagonale en dehors de l
 
 ## Documentations et ressources
 
-<<<<<<< HEAD
-* Site officiel de l’app : <http://hextris.github.io/>
-* Dépôt de code officiel de l’app : <https://github.com/Hextris/Hextris>
-* YunoHost Store: <https://apps.yunohost.org/app/hextris>
-* Signaler un bug : <https://github.com/YunoHost-Apps/hextris_ynh/issues>
-=======
 - Site officiel de l’app : <http://hextris.github.io/>
 - Dépôt de code officiel de l’app : <https://github.com/Hextris/Hextris>
 - YunoHost Store : <https://apps.yunohost.org/app/hextris>
 - Signaler un bug : <https://github.com/YunoHost-Apps/hextris_ynh/issues>
->>>>>>> master
 
 ## Informations pour les développeurs
 
