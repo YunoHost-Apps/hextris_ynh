@@ -5,7 +5,7 @@ EZ editatu eskuz.
 
 # Hextris YunoHost-erako
 
-[![Integrazio maila](https://dash.yunohost.org/integration/hextris.svg)](https://dash.yunohost.org/appci/app/hextris) ![Funtzionamendu egoera](https://ci-apps.yunohost.org/ci/badges/hextris.status.svg) ![Mantentze egoera](https://ci-apps.yunohost.org/ci/badges/hextris.maintain.svg)
+[![Integrazio maila](https://dash.yunohost.org/integration/hextris.svg)](https://ci-apps.yunohost.org/ci/apps/hextris/) ![Funtzionamendu egoera](https://ci-apps.yunohost.org/ci/badges/hextris.status.svg) ![Mantentze egoera](https://ci-apps.yunohost.org/ci/badges/hextris.maintain.svg)
 
 [![Instalatu Hextris YunoHost-ekin](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=hextris)
 
