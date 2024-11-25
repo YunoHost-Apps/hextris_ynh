@@ -5,7 +5,9 @@
 
 # Hextris для YunoHost
 
-[![Уровень интеграции](https://dash.yunohost.org/integration/hextris.svg)](https://ci-apps.yunohost.org/ci/apps/hextris/) ![Состояние работы](https://ci-apps.yunohost.org/ci/badges/hextris.status.svg) ![Состояние сопровождения](https://ci-apps.yunohost.org/ci/badges/hextris.maintain.svg)
+[![Уровень интеграции](https://apps.yunohost.org/badge/integration/hextris)](https://ci-apps.yunohost.org/ci/apps/hextris/)
+![Состояние работы](https://apps.yunohost.org/badge/state/hextris)
+![Состояние сопровождения](https://apps.yunohost.org/badge/maintained/hextris)
 
 [![Установите Hextris с YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=hextris)
 

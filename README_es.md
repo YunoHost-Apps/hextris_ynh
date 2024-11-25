@@ -5,7 +5,9 @@ No se debe editar a mano.
 
 # Hextris para Yunohost
 
-[![Nivel de integración](https://dash.yunohost.org/integration/hextris.svg)](https://ci-apps.yunohost.org/ci/apps/hextris/) ![Estado funcional](https://ci-apps.yunohost.org/ci/badges/hextris.status.svg) ![Estado En Mantención](https://ci-apps.yunohost.org/ci/badges/hextris.maintain.svg)
+[![Nivel de integración](https://apps.yunohost.org/badge/integration/hextris)](https://ci-apps.yunohost.org/ci/apps/hextris/)
+![Estado funcional](https://apps.yunohost.org/badge/state/hextris)
+![Estado En Mantención](https://apps.yunohost.org/badge/maintained/hextris)
 
 [![Instalar Hextris con Yunhost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=hextris)
 
@@ -42,7 +44,7 @@ You lose once blocks on a face of the hexagon stack outside of the outer hexagon
 
 ## Información para desarrolladores
 
-Por favor enviar sus correcciones a la [`branch testing`](https://github.com/YunoHost-Apps/hextris_ynh/tree/testing
+Por favor enviar sus correcciones a la [rama `testing`](https://github.com/YunoHost-Apps/hextris_ynh/tree/testing).
 
 Para probar la rama `testing`, sigue asÍ:
 

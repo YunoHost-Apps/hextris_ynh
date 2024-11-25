@@ -5,7 +5,9 @@ NON debe editarse manualmente.
 
 # Hextris para YunoHost
 
-[![Nivel de integración](https://dash.yunohost.org/integration/hextris.svg)](https://ci-apps.yunohost.org/ci/apps/hextris/) ![Estado de funcionamento](https://ci-apps.yunohost.org/ci/badges/hextris.status.svg) ![Estado de mantemento](https://ci-apps.yunohost.org/ci/badges/hextris.maintain.svg)
+[![Nivel de integración](https://apps.yunohost.org/badge/integration/hextris)](https://ci-apps.yunohost.org/ci/apps/hextris/)
+![Estado de funcionamento](https://apps.yunohost.org/badge/state/hextris)
+![Estado de mantemento](https://apps.yunohost.org/badge/maintained/hextris)
 
 [![Instalar Hextris con YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=hextris)
 
