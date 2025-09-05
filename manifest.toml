@@ -5,7 +5,7 @@ name = "Hextris"
 description.en = "Fast paced puzzle game"
 description.fr = "Jeu de puzzle très rapide"
 
-version = "2023.06.09~ynh2"
+version = "2025.09.05~ynh1"
 
 maintainers = ["AerisOne"]
 
