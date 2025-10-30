@@ -5,7 +5,7 @@ name = "Hextris"
 description.en = "Fast paced puzzle game"
 description.fr = "Jeu de puzzle très rapide"
 
-version = "2023.06.09~ynh2"
+version = "2025.09.05~ynh1"
 
 maintainers = ["AerisOne"]
 
@@ -16,7 +16,7 @@ demo = "https://hextris.io/"
 code = "https://github.com/Hextris/Hextris"
 
 [integration]
-yunohost = ">= 12.0.9"
+yunohost = ">= 12.1.17"
 helpers_version = "2.1"
 architectures = "all"
 multi_instance = true
